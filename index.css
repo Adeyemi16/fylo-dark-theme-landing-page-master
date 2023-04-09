@@ -1,0 +1,270 @@
+:root{
+    /* ### Primary */
+
+  --Dark-Blue: hsl(217, 28%, 15%);
+  --Dark-Blue-main-background: hsl(218, 28%, 13%);
+  --Dark-Blue-footer-background: hsl(216, 53%, 9%);
+  --Dark-Blue-testimonials-background: hsl(219, 30%, 18%);
+
+/* ### Accent */
+
+  --Cyan-call-to-action : hsl(176, 68%, 64%);
+  --Blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);
+  --Light-Red-error: hsl(0, 100%, 63%);
+
+/* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+
+/* ## Typography */
+
+/* ### Body Copy */
+
+  --Font-size: 14px;
+}
+
+@font-face {
+    font-family: small;
+    src: url(fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: medium;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: large;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: smaller;
+    src: url(fonts/Poppins-ExtraLight.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--Dark-Blue-main-background);
+    color: var(--White);
+    font-family: medium;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    font-family: small;
+}
+
+li:hover{
+    border-bottom-style: solid;
+    border-bottom-color: var(--White);
+    cursor: pointer;
+    transition: .05s;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.first{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.imgA{
+    width: 450px;
+}
+
+.imgB{
+    width: 100px;
+    /* height: 99px; */
+}
+
+.bold{
+    font-family: large;
+    font-size: x-large;
+    margin: 0;
+}
+
+.light  {
+    font-family: small;
+    margin: 0;
+}
+
+.text{
+    display: contents;
+    gap: 10px;
+}
+
+button{
+    width: 300px;
+    height: 45px;
+    border-style: none;
+    border-radius: 25px;
+    background: linear-gradient( to right, var(--Cyan-call-to-action), var(--Blue-inside-call-to-action-gradient));
+    color: var(--White);
+    font-family: medium;
+}
+
+button:hover{
+    background: var(--Cyan-call-to-action);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+    height: 100vh;
+    align-items: center;
+}
+
+.secondB{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 420px;
+}
+
+.secondC{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 420px;
+}
+.second-content{
+    display: flex;
+    flex-direction: column;
+    height: 232px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.third{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    text-align: left;
+    align-items: center;
+    gap: 80px;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.imgC{
+    width: 500px;
+}
+
+.works{
+    font-family: small;
+    display: flex;
+    color: var(--Cyan-call-to-action);
+    width: 200px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--Cyan-call-to-action);
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.works:hover{
+    cursor: pointer;
+    color: var(--White);
+    border-bottom-color: var(--White);
+}
+
+.imgD{
+    height: 16px;
+}
+
+.imgD{
+    color: var(--White);
+}
+
+.fourth{
+    width: 90%;
+}
+
+#fourth{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.imgF{
+    border-radius: 40px;
+    height: 40px;
+}
+
+.fourth-sec{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background: var(--Dark-Blue-testimonials-background);
+    height: 150px;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: center;
+    font-size: var(--Font-size);
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.lightb{
+    font-family: smaller;
+    margin: 0;
+}
+
+#textB{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.regular{
+    font-family: large;
+    margin: 0;
+}
+
+
