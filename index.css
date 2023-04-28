@@ -115,11 +115,19 @@ main{
 
 .light  {
     font-family: small;
+    color: lightgrey;
     margin: 0;
 }
 
 .text{
     /* display: contents; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.textB{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,14 +228,12 @@ button:hover{
 
 .fourth{
     width: 100%;
-    height: 60vh;
+    height: 49vh;
     /* margin-top: 100px; */
-    position: relative;
+    /* position: relative; */
 }
 
-.imgE{
-    position: relative;
-}
+
 
 #fourth{
     width: 100%;
@@ -237,7 +243,7 @@ button:hover{
     justify-content: center;
     /* align-items: center; */
     flex-direction: row;
-    position: absolute;
+    
 }
 
 .imgF{
@@ -268,10 +274,13 @@ button:hover{
 
 .lightb{
     font-family: smaller;
+    color: lightgrey;
     margin: 0;
     font-size: large;
 }
-
+.light:hover{
+    cursor: pointer;
+}
 #textB{
     display: flex;
     flex-direction: column;
@@ -328,7 +337,7 @@ footer{
     height: 50vh;
     align-items: center;
     justify-content: center;
-    gap: 90px;
+    gap: 75px;
     display: flex;
     flex-direction: row;
 }
@@ -367,4 +376,133 @@ gap: 10px;
 
 .socials{
     color: var(--White);
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+.border{
+   border-style: solid;
+   border-color: white;
+}
+
+.li{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 23px;
+}
+
+@media screen and (max-width: 668px) {
+    nav{
+        padding: 0;
+        width: 100vw;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    .links{
+        gap: 10px;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+    }
+
+    .first{
+        width: 100vw;
+    }
+
+    .imgA{
+        width: 350px;
+    }
+    .secondB{
+        width: 100vw;
+    }
+
+    .second{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 150vh;
+    }
+
+    .third{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #fourth{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+        padding: 0;
+    }
+
+    #early-access{
+      width: 80vw;
+      height: 300px;
+      margin-bottom: 150px;
+    }
+    #text{
+        width: 100%;
+        text-align: left;
+        display: flex;
+        justify-content: left;
+    }
+
+    .imgC{
+        width: 350px;
+    }
+
+    .light{
+        width: 100vw;
+        width: 100%;
+        font-family: medium;
+        font-size: larger;
+        margin: 0;
+    }
+    .text{
+        width: 89vw;
+        padding: 32px;
+    }
+    .second-content{
+        margin-bottom: 20px;
+    }
+
+    .footA{
+        width: 100vw;
+    }
+
+    .imgE{
+        width: 122px;
+    }
+
+    .logo{
+        padding-top: 10px;
+    }
+
+    main{
+        gap: 100px;
+    }
+
+    .bold{
+        text-align: center;
+    }
 }
