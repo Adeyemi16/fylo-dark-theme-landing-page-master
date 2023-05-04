@@ -390,6 +390,10 @@ ul{
    border-color: white;
 }
 
+.border:hover{
+    color: var(--Cyan-call-to-action);
+}
+
 .li{
     width: 40px;
     height: 40px;
@@ -397,6 +401,18 @@ ul{
     align-items: center;
     justify-content: center;
     border-radius: 23px;
+}
+.white{
+    width: 15px; 
+    color: white;
+}
+
+.valid{
+    color: var(--Light-Red-error);
+}
+
+.hide{
+    display: none;
 }
 
 @media screen and (max-width: 668px) {
@@ -408,7 +424,7 @@ ul{
     }
 
     .links{
-        gap: 10px;
+        gap: 19px;
     }
     body{
         margin: 0;
@@ -418,7 +434,10 @@ ul{
 
     .first{
         width: 100vw;
+        /* padding-left: 20px;
+        padding-right: 20px; */
     }
+
 
     .imgA{
         width: 350px;
@@ -431,13 +450,27 @@ ul{
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 150vh;
+        height: 110vh;
+        margin-bottom: 122px;
+    }
+    .links{
+        margin: 0;
+        padding: 0;
     }
 
     .third{
         display: flex;
         flex-direction: column;
 
+    }
+    .fourth{
+        margin-top: 80px;
+        margin-bottom: 280px;
+        height: 69vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     #fourth{
@@ -446,19 +479,49 @@ ul{
         align-items: center;
         margin-top: 200px;
     }
+    .imgB{
+        width: 69px;
+    }
 
     footer{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
         width: 100vw;
-        height: 100%;
+        height: 125vh;
+        gap: 54px;
         padding: 0;
+        padding-bottom: 0;
+    }
+
+    .logob{
+        padding-left: 20px;
+    }
+
+    .logoc{
+        padding-left: 20px;
+    }
+
+    .footB{
+            padding-left: 20px;
+    }
+
+    .socials{
+        width: 100%;
+        display: flex;
+        padding: 0;
+        justify-content: center;
+    }
+
+    #boom{
+            padding-left: 20px;
     }
 
     #early-access{
       width: 80vw;
-      height: 300px;
-      margin-bottom: 150px;
+      height: 327px;
+      margin-bottom: -76px;
     }
     #text{
         width: 100%;
@@ -490,6 +553,16 @@ ul{
         width: 100vw;
     }
 
+    #btn{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .btn{
+        width: 304px;
+    }
     .imgE{
         width: 122px;
     }
@@ -504,5 +577,10 @@ ul{
 
     .bold{
         text-align: center;
+
+    }
+
+    .fourth-sec{
+        height: 250px;
     }
 }
